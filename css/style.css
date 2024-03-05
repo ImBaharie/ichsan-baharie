@@ -50,8 +50,8 @@ body {
     margin-right: 10px;
 }
 
-.bios-body ul li a{
-    color:#fff;
+.bios-body ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -66,4 +66,41 @@ body {
     color: white;
     /* Warna tulisan putih */
     text-decoration: none;
+}
+
+
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 600px */
+@media only screen and (max-width: 600px) {
+    .bios-screen {
+        width: 90%;
+        /* Menggunakan persentase untuk lebar */
+        height: auto;
+        /* Tinggi disesuaikan dengan konten */
+        margin: 20px auto;
+        /* Mengurangi margin agar terlihat lebih baik */
+    }
+
+    .navigation-links {
+        bottom: 20px;
+        /* Menggeser navigasi ke atas */
+    }
+}
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 400px */
+@media only screen and (max-width: 400px) {
+    .bios-header h1 {
+        font-size: 24px;
+        /* Mengurangi ukuran font untuk header */
+    }
+
+    .bios-header p {
+        font-size: 14px;
+        /* Mengurangi ukuran font untuk paragraf */
+    }
+
+    .bios-body ul li {
+        font-size: 16px;
+        /* Mengurangi ukuran font untuk list item */
+    }
 }
